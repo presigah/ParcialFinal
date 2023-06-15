@@ -1,4 +1,4 @@
-import PlayersForm from "../components/PlayersForm";
+import PlayersForm from "../components/PlayersFormMP";
 
 const Home = () => {
 	return (

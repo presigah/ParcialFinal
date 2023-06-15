@@ -38,7 +38,7 @@ const GameProvider = ({ children }) => {
     setObteingCard("Ramdom Card: " + randomCard.value + " " + randomCard.suit);
     let result = false;
     const suitsMapping = {
-      CLUBS: "DIAMONS",
+      CLUBS: "DIAMONDS",
       DIAMONDS: "CLUBS",
       HEARTS: "SPADES",
       SPADES: "HEARTS",

@@ -3,7 +3,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 
-const Navbar = () => {
+const NavbarMP = () => {
 	return (
 		<AppBar sx={{ marginBottom: 3}} position="static" style={{ background: '#1B2430' }}>
 			<Toolbar>
@@ -16,4 +16,4 @@ const Navbar = () => {
 	);
 }
 
-export default Navbar;
+export default NavbarMP;

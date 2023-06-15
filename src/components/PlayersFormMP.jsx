@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useContext } from 'react';
 import GameContext from '../context/GameContext';
 
-const PlayersForm = () => {
+const PlayersFormMP = () => {
 	const navigate = useNavigate(); 
 	const {namePlayer, setNamePlayer, startGame} = useContext(GameContext);
 	const [isButtonDisabled, setIsButtonDisabled] = useState(true);
@@ -39,4 +39,4 @@ const PlayersForm = () => {
 	);
 };
 
-export default PlayersForm;
+export default PlayersFormMP;
