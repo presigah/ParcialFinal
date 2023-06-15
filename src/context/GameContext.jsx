@@ -8,6 +8,7 @@ const GameProvider = ({ children }) => {
   const [namePlayer, setNamePlayer] = useState("");
   const [cardPlayer, setCardPlayer] = useState([]);
   const [antiCardPlayer, setAntiCardPlayer] = useState([]);
+  const [obteingCard, setObteingCard] = useState("");
   const [gameId, setGameId] = useState("");
   const [playerWin, setPlayerWin] = useState(false);
 
@@ -34,6 +35,7 @@ const GameProvider = ({ children }) => {
   const addCards = async () => {
     const getCard = await getCards(1);
     const randomCard = getCard[0];
+    setObteingCard("Ramdom Card: " + randomCard.value + " " + randomCard.suit);
     let result = false;
     const suitsMapping = {
       CLUBS: "DIAMONS",
@@ -57,7 +59,8 @@ const GameProvider = ({ children }) => {
         cardPlayer,
         addCards,
         playerWin,
-        antiCardPlayer
+        antiCardPlayer,
+        obteingCard
       }}
     >
       {children}
